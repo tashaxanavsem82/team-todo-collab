@@ -4,21 +4,21 @@
   "description": "A collaborative todo list application that allows teams to create, assign, and track tasks in real-time.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently 'npm run client' 'nodemon server.js'",
-    "test": "echo 'Error: no test specified' && exit 1",
-    "build": "npm run build --prefix client"
+    "start": "node server.js",                     // Start the server
+    "client": "npm start --prefix client",       // Start the client application
+    "dev": "concurrently 'npm run client' 'nodemon server.js'", // Run client and server simultaneously in development
+    "test": "echo 'Error: no test specified' && exit 1", // Placeholder test command
+    "build": "npm run build --prefix client"     // Build the client application
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^5.11.15",
-    "socket.io": "^4.5.0",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0"
+    "express": "^4.18.2",                        // Express framework
+    "mongoose": "^5.11.15",                      // MongoDB object modeling library
+    "socket.io": "^4.5.0",                      // Real-time web socket library
+    "cors": "^2.8.5",                           // Middleware for enabling CORS
+    "dotenv": "^10.0.0"                         // Environment variable loader
   },
   "devDependencies": {
-    "nodemon": "^2.0.15",
-    "concurrently": "^6.2.0"
+    "nodemon": "^2.0.15",                        // Development tool for auto-restarting the server
+    "concurrently": "^6.2.0"                     // Run multiple commands concurrently
   }
 }
