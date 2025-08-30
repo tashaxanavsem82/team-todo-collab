@@ -1,7 +1,7 @@
 {
   "name": "team-todo-collab",
   "version": "1.0.0",
-  "description": "A collaborative todo list application that allows teams to create, assign, and track tasks in real-time.",
+  "description": "A collaborative todo list application that enables teams to create, assign, and track tasks in real-time.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",                     // Start the server
