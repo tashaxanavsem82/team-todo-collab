@@ -17,7 +17,10 @@ app.use(express.json());
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+  .catch(err => {
+    console.error('MongoDB connection error:', err);
+    process.exit(1); // Exit the process with failure
+  });
 
 // Create HTTP server and attach Socket.io
 const server = http.createServer(app);
