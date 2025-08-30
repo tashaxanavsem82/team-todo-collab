@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently 'npm run client' 'nodemon server.js'"
+    "dev": "concurrently 'npm run client' 'nodemon server.js',
+    "test": "echo 'Error: no test specified' && exit 1",
+    "build": "npm run build --prefix client"
   },
   "dependencies": {
     "express": "^4.18.2",
